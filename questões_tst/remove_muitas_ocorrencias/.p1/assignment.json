@@ -1,0 +1,32 @@
+{
+  "dirname": null,
+  "full_resource": {
+    "dirname": null,
+    "files": [
+      {
+        "category": "public",
+        "content": "- type: script\n  script: python public_tests.py {}\n\n",
+        "mode": "ro",
+        "name": "public_tests.yaml"
+      },
+      {
+        "category": "public",
+        "content": "import unittest\nimport sys\n\nmodule = sys.argv[-1].split(\".py\")[0]\n\n\nclass PublicTests(unittest.TestCase):\n\n    @classmethod\n    def setUpClass(cls):\n        global remove_muitas_ocorrencias\n        undertest = __import__(module)\n        remove_muitas_ocorrencias = getattr(undertest, 'remove_muitas_ocorrencias', None)\n\n    def test_example(self):\n        l = [1, 1, 2, 1]\n        assert remove_muitas_ocorrencias(l) == None\n        assert l == [2]\n\n    def test_exemplo2(self):\n        l = [1, 2, 1, 2, 1, 1]\n        assert remove_muitas_ocorrencias(l) == None\n        assert l == [2, 2]\n\nif __name__ == '__main__':\n    loader = unittest.TestLoader()\n    runner = unittest.TextTestRunner()\n    runner.run(loader.loadTestsFromModule(sys.modules[__name__]))\n",
+        "mode": "r",
+        "name": "public_tests.py"
+      },
+      {
+        "content": "{\n  \"tests\": [],\n  \"title\": \"Remove Muitas Ocorrências\"\n}",
+        "mode": "r",
+        "name": "tst.json"
+      }
+    ],
+    "iid": 4984067999137792,
+    "index": null,
+    "user": "emanuel.lima@ccc.ufcg.edu.br"
+  },
+  "iid": 4984067999137792,
+  "key": "4984067999137792",
+  "site": "prog1",
+  "user": "emanuel.lima@ccc.ufcg.edu.br"
+}

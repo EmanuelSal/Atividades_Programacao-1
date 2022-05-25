@@ -1,0 +1,26 @@
+{
+  "dirname": null,
+  "full_resource": {
+    "dirname": null,
+    "files": [
+      {
+        "category": "public",
+        "content": "- input: |\n    10 10\n    B 11\n    D 5\n    E 8\n    X\n    \n  output: |\n    > 21 10\n    > 21 15\n    > 21 7\n    24\n",
+        "mode": "ro",
+        "name": "public_tests.yaml"
+      },
+      {
+        "content": "{\n  \"tests\": [],\n  \"title\": \"Movimentos\"\n}",
+        "mode": "r",
+        "name": "tst.json"
+      }
+    ],
+    "iid": 6660769812840448,
+    "index": null,
+    "user": "emanuel.lima@ccc.ufcg.edu.br"
+  },
+  "iid": 6660769812840448,
+  "key": "6660769812840448",
+  "site": "prog1",
+  "user": "emanuel.lima@ccc.ufcg.edu.br"
+}

@@ -1,0 +1,32 @@
+{
+  "dirname": null,
+  "full_resource": {
+    "dirname": null,
+    "files": [
+      {
+        "category": "public",
+        "content": "- type: script\n  script: pytest test_public.py --tst {} --clean\n\n",
+        "mode": "r",
+        "name": "public_tests.yaml"
+      },
+      {
+        "category": "public",
+        "content": "from undertst import rotesq\n\ndef test_exemplo():\n    valores = [10, 20, 14, 17, 22, 9, 32]\n    rotesq(valores)\n    assert valores == [20, 14, 17, 22, 9, 32, 10]\n",
+        "mode": "rw",
+        "name": "test_public.py"
+      },
+      {
+        "content": "{\n  \"tests\": [],\n  \"title\": \"Rotaciona Array à Esquerda\"\n}",
+        "mode": "r",
+        "name": "tst.json"
+      }
+    ],
+    "iid": 6397303835328512,
+    "index": null,
+    "user": "emanuel.lima@ccc.ufcg.edu.br"
+  },
+  "iid": 6397303835328512,
+  "key": "6397303835328512",
+  "site": "prog1",
+  "user": "emanuel.lima@ccc.ufcg.edu.br"
+}

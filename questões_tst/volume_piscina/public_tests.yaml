@@ -1,0 +1,7 @@
+- input: |
+    15.0
+    4
+    1.8
+  name:
+  output: |
+    A piscina comporta 108000.00 litros de água.

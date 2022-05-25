@@ -1,0 +1,26 @@
+{
+  "dirname": null,
+  "full_resource": {
+    "dirname": null,
+    "files": [
+      {
+        "category": "public",
+        "content": "- input: |\n    sxas\n    23\n  output: |\n    Perturbação Detectada!\n\n- input: |2\n\n    12\n  output: |\n    Condomínio em Paz.\n",
+        "mode": "ro",
+        "name": "public_tests.yaml"
+      },
+      {
+        "content": "{\n  \"tests\": [],\n  \"title\": \"Sensor de Ruídos\"\n}",
+        "mode": "r",
+        "name": "tst.json"
+      }
+    ],
+    "iid": 5259411238944768,
+    "index": null,
+    "user": "emanuel.lima@ccc.ufcg.edu.br"
+  },
+  "iid": 5259411238944768,
+  "key": "5259411238944768",
+  "site": "prog1",
+  "user": "emanuel.lima@ccc.ufcg.edu.br"
+}

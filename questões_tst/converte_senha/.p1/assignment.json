@@ -1,0 +1,32 @@
+{
+  "dirname": null,
+  "full_resource": {
+    "dirname": null,
+    "files": [
+      {
+        "category": "public",
+        "content": "{\n  \"quality\": [\n    {\n      \"cc\": 11,\n      \"pep8\": 0,\n      \"lloc\": 19,\n      \"vhalstead\": 230.75,\n      \"header\": 4\n    }\n  ]\n}",
+        "mode": "r",
+        "name": "qcheck.json"
+      },
+      {
+        "category": "public",
+        "content": "- input: |\n    Python\n  output: |\n    Pyth0n (1 troca(s))\n\n- input: |\n    ZENIT\n  output: |\n    Z3N1T (2 troca(s))\n\n- input: |\n    Abacateiro\n  output: |\n    Ab4c4t31r0 (5 troca(s))\n\n",
+        "mode": "ro",
+        "name": "public_tests.yaml"
+      },
+      {
+        "content": "{\n  \"tests\": [],\n  \"title\": \"Converte Senha\"\n}",
+        "mode": "r",
+        "name": "tst.json"
+      }
+    ],
+    "iid": 5819308846350336,
+    "index": null,
+    "user": "emanuel.lima@ccc.ufcg.edu.br"
+  },
+  "iid": 5819308846350336,
+  "key": "5819308846350336",
+  "site": "prog1",
+  "user": "emanuel.lima@ccc.ufcg.edu.br"
+}

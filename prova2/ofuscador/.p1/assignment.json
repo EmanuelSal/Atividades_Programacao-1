@@ -1,0 +1,32 @@
+{
+  "dirname": null,
+  "full_resource": {
+    "dirname": null,
+    "files": [
+      {
+        "category": "public",
+        "content": "- type: script\n  script: python public_tests.py {}\n\n",
+        "mode": "ro",
+        "name": "public_tests.yaml"
+      },
+      {
+        "category": "public",
+        "content": "import unittest\nimport sys\n\nmodule = sys.argv[-1].split(\".py\")[0]\n\n\nclass PublicTests(unittest.TestCase):\n\n   @classmethod\n   def setUpClass(cls):\n      global ofuscador\n      undertest = __import__(module)\n      ofuscador = getattr(undertest, 'ofuscador', None)\n\n   def test_exemplo_1(self):\n      assert ofuscador(\"I love Python!\") == \"1*70V3****pYTH0N!\"\n\n\n\nif __name__ == '__main__':\n    loader = unittest.TestLoader()\n    runner = unittest.TextTestRunner()\n    runner.run(loader.loadTestsFromModule(sys.modules[__name__]))\n",
+        "mode": "rw",
+        "name": "public_tests.py"
+      },
+      {
+        "content": "{\n  \"ignore\": [\n    \"public_tests.py\",\n    \"acceptance_tests.py\"\n  ],\n  \"tests\": [],\n  \"title\": \"Ofuscador\"\n}",
+        "mode": "r",
+        "name": "tst.json"
+      }
+    ],
+    "iid": 6382628267622400,
+    "index": null,
+    "user": "emanuel.lima@ccc.ufcg.edu.br"
+  },
+  "iid": 6382628267622400,
+  "key": "6382628267622400",
+  "site": "prog1",
+  "user": "emanuel.lima@ccc.ufcg.edu.br"
+}

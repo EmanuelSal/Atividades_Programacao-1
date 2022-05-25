@@ -1,0 +1,32 @@
+{
+  "dirname": null,
+  "full_resource": {
+    "dirname": null,
+    "files": [
+      {
+        "category": "public",
+        "content": "- type: script\n  script: pytest test_public.py --tst {} --clean\n\n",
+        "mode": "rw",
+        "name": "public_tests.yaml"
+      },
+      {
+        "category": "public",
+        "content": "from undertst import aparta\n\ndef test_do_enunciado():\n    v = [8, 10, 11, 7, 21, 2, 17, 6, 28, 24]\n    assert aparta(v, 3) == 3\n    assert v == [8, 10, 11, 7, 2, 17, 28, 21, 6, 24]\n",
+        "mode": "rw",
+        "name": "test_public.py"
+      },
+      {
+        "content": "{\n  \"ignore\": [\n    \"test_acceptance.py\",\n    \"test_public.py\"\n  ],\n  \"tests\": [],\n  \"title\": \"Aparta divisíveis\"\n}",
+        "mode": "r",
+        "name": "tst.json"
+      }
+    ],
+    "iid": 6398818213953536,
+    "index": null,
+    "user": "emanuel.lima@ccc.ufcg.edu.br"
+  },
+  "iid": 6398818213953536,
+  "key": "6398818213953536",
+  "site": "prog1",
+  "user": "emanuel.lima@ccc.ufcg.edu.br"
+}

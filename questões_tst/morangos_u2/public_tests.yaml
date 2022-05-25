@@ -1,0 +1,11 @@
+- input: |
+    220
+  output: |
+    0 caixa(s) completa(s) para embalar os morangos.
+    100.0% dos morangos serão perdidos.
+
+- input: |
+    440
+  output: |
+    1 caixa(s) completa(s) para embalar os morangos.
+    9.1% dos morangos serão perdidos.

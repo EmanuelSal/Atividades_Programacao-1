@@ -1,0 +1,32 @@
+{
+  "dirname": null,
+  "full_resource": {
+    "dirname": null,
+    "files": [
+      {
+        "category": "public",
+        "content": "- type: script\n  script: python3 public_tests.py {}\n\n",
+        "mode": "ro",
+        "name": "public_tests.yaml"
+      },
+      {
+        "category": "public",
+        "content": "import unittest\nimport sys\n\nmodule = sys.argv[-1].split(\".py\")[0]\n\nclass PublicTests(unittest.TestCase):\n\n    @classmethod\n    def setUpClass(cls):\n        global so_coincidentes\n        undertest = __import__(module)\n        so_coincidentes = getattr(undertest, 'so_coincidentes', None)\n\n    def test_semelhante_ao_da_prova_esq(self):\n        M1 = [[1, 2, 3],\n              [4, 5, 6],\n              [7, 8, 9]]\n\n        M2= [[10, 11, 12],\n             [13, 14, 15],\n             [ 7,  8,  9]]\n\n        assert so_coincidentes(M1, M2) == [[0,0,0],[0,0,0],[7,8,9]]\n\n    def test_semelhante_ao_da_prova_dir(self):\n        M1 = [[1, 2, 3],\n              [4, 5, 6],\n              [7, 8, 9]]\n\n        M3= [[ 1,  2,  3],\n             [13, 14, 15],\n             [16, 17, 18]]\n\n\n        assert so_coincidentes(M1, M3) == [[1,2,3],[0,0,0],[0,0,0]]\n\nif __name__ == '__main__':\n    loader = unittest.TestLoader()\n    runner = unittest.TextTestRunner()\n    runner.run(loader.loadTestsFromModule(sys.modules[__name__]))\n",
+        "mode": "r",
+        "name": "public_tests.py"
+      },
+      {
+        "content": "{\n  \"tests\": [],\n  \"title\": \"Só Coincidentes\"\n}",
+        "mode": "r",
+        "name": "tst.json"
+      }
+    ],
+    "iid": 6370226583109632,
+    "index": null,
+    "user": "emanuel.lima@ccc.ufcg.edu.br"
+  },
+  "iid": 6370226583109632,
+  "key": "6370226583109632",
+  "site": "prog1",
+  "user": "emanuel.lima@ccc.ufcg.edu.br"
+}

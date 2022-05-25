@@ -1,0 +1,9 @@
+- input: |
+    Alex Garcia
+    Augusto
+    Cristiano
+    Guilherme
+    Hettshelmeir
+    -
+  output: |
+    Modalidade -> Basquete

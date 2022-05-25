@@ -1,0 +1,11 @@
+- input: |
+    sxas
+    23
+  output: |
+    Perturbação Detectada!
+
+- input: |2
+
+    12
+  output: |
+    Condomínio em Paz.

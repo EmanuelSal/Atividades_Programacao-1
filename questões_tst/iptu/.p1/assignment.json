@@ -1,0 +1,26 @@
+{
+  "dirname": null,
+  "full_resource": {
+    "dirname": null,
+    "files": [
+      {
+        "category": "public",
+        "content": "- input: |\n    150.0\n    0.89\n  output: |\n    Área construída? Alíquota? IPTU: R$ 168.50\n\n    Pagamento:\n    1. Quota única. R$ 126.38\n    2. Em 6 parcelas. Total: R$ 160.07\n       6 x R$ 26.68\n    3. Em 10 parcelas. Total: R$ 168.50\n       10 x R$ 16.85\n\n",
+        "mode": "ro",
+        "name": "public_tests.yaml"
+      },
+      {
+        "content": "{\n  \"tests\": [],\n  \"title\": \"IPTU\"\n}",
+        "mode": "r",
+        "name": "tst.json"
+      }
+    ],
+    "iid": 5043753012166656,
+    "index": null,
+    "user": "emanuel.lima@ccc.ufcg.edu.br"
+  },
+  "iid": 5043753012166656,
+  "key": "5043753012166656",
+  "site": "prog1",
+  "user": "emanuel.lima@ccc.ufcg.edu.br"
+}

@@ -1,0 +1,2 @@
+- type: script
+  script: python public_tests.py {}

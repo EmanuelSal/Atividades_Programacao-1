@@ -1,0 +1,26 @@
+{
+  "dirname": null,
+  "full_resource": {
+    "dirname": null,
+    "files": [
+      {
+        "category": "public",
+        "content": "- input: |\n    3.0\n    4.0\n  match: .*Cateto 1.*Cateto 2.*Hipotenusa.*5.0.*\n  ignore: case\n\n- input: |\n    15.0\n    20.0\n  match: .*Cateto 1.*Cateto 2.*Hipotenusa.*25.0.*\n  ignore: case\n\n- input: |\n    30.0\n    40.0\n  match: .*Cateto 1.*Cateto 2.*Hipotenusa.*50.0.*\n  ignore: case\n",
+        "mode": "ro",
+        "name": "public_tests.yaml"
+      },
+      {
+        "content": "{\n  \"tests\": [],\n  \"title\": \"Calculando a Hipotenusa\"\n}",
+        "mode": "r",
+        "name": "tst.json"
+      }
+    ],
+    "iid": 5805762251063296,
+    "index": null,
+    "user": "emanuel.lima@ccc.ufcg.edu.br"
+  },
+  "iid": 5805762251063296,
+  "key": "5805762251063296",
+  "site": "prog1",
+  "user": "emanuel.lima@ccc.ufcg.edu.br"
+}

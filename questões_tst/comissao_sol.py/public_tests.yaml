@@ -1,0 +1,11 @@
+- input: |
+    Wilkerson
+    300
+  output: |
+    Qual é o nome do(a) vendedor(a)? Qual é o valor da venda? O valor da comissão para o(a) vendedor(a) Wilkerson é R$ 15.00.
+
+- input: |
+    Wilkerson
+    600
+  output: |
+    Qual é o nome do(a) vendedor(a)? Qual é o valor da venda? O valor da comissão para o(a) vendedor(a) Wilke é R$ 60.00.

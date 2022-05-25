@@ -1,0 +1,26 @@
+- input: |
+    13571981724
+    42
+  output: |
+    soma: 26
+    números lidos: 6 de 11
+    critério de parada: 6 ímpares
+
+- input: |
+    71881724
+    12
+  output: |
+    soma: 16
+    números lidos: 3 de 8
+    critério de parada: limite
+
+- input: |
+    1234215
+    42
+  output: |
+    soma: 18
+    números lidos: 7 de 7
+    critério de parada: final da sequência
+
+
+

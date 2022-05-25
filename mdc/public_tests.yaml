@@ -1,0 +1,17 @@
+- input: |
+    18
+    42
+  output: |
+    maior: 42
+    menor: 18
+    resto: 6
+    ----------
+    maior: 18
+    menor: 6
+    resto: 0
+    ----------
+    maior: 6
+    menor: 0
+    ----------
+    MDC: 6
+

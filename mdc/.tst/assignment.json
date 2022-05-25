@@ -1,0 +1,26 @@
+{
+  "dirname": null,
+  "full_resource": {
+    "dirname": null,
+    "files": [
+      {
+        "category": "public",
+        "content": "- input: |\n    18\n    42\n  output: |\n    maior: 42\n    menor: 18\n    resto: 6\n    ----------\n    maior: 18\n    menor: 6\n    resto: 0\n    ----------\n    maior: 6\n    menor: 0\n    ----------\n    MDC: 6\n\n",
+        "mode": "ro",
+        "name": "public_tests.yaml"
+      },
+      {
+        "content": "{\n  \"tests\": [],\n  \"title\": \"MDC\"\n}",
+        "mode": "r",
+        "name": "tst.json"
+      }
+    ],
+    "iid": 4997736833220608,
+    "index": null,
+    "user": "emanuel.lima@ccc.ufcg.edu.br"
+  },
+  "iid": 4997736833220608,
+  "key": "4997736833220608",
+  "site": "prog1",
+  "user": "emanuel.lima@ccc.ufcg.edu.br"
+}

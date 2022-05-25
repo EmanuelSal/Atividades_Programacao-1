@@ -1,0 +1,26 @@
+{
+  "dirname": null,
+  "full_resource": {
+    "dirname": null,
+    "files": [
+      {
+        "category": "public",
+        "content": "- input: |\n    10000\n    8000\n    176000\n  name: exemplo\n  output: |\n    2.50\n    2.00\n    44.00\n    16.17\n\n- input: |\n    7643.23\n    342345\n    3432     \n  name: exemplo2\n  output: |\n    1.91\n    85.59\n    0.86\n    29.45\n\n",
+        "mode": "ro",
+        "name": "public_tests.yaml"
+      },
+      {
+        "content": "{\n  \"tests\": [],\n  \"title\": \"Campos de Futebol\"\n}",
+        "mode": "r",
+        "name": "tst.json"
+      }
+    ],
+    "iid": 4971615278333952,
+    "index": null,
+    "user": "emanuel.lima@ccc.ufcg.edu.br"
+  },
+  "iid": 4971615278333952,
+  "key": "4971615278333952",
+  "site": "prog1",
+  "user": "emanuel.lima@ccc.ufcg.edu.br"
+}

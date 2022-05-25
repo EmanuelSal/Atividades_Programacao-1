@@ -1,0 +1,32 @@
+{
+  "dirname": null,
+  "full_resource": {
+    "dirname": null,
+    "files": [
+      {
+        "category": "public",
+        "content": "- type: script\n  script: python public_tests.py {}\n",
+        "mode": "ro",
+        "name": "public_tests.yaml"
+      },
+      {
+        "category": "public",
+        "content": "import unittest\nimport sys\n\nundertest = __import__(sys.argv[-1].split(\".py\")[0])\nsubtrai_polinomios = getattr(undertest, 'subtrai_polinomios', None)\n\nclass PublicTests(unittest.TestCase):\n\n    def test_exemplo_1(self):\n        p1 = [-5, 4, 3]\n        p2 = [-1, 0, 2, 0, 0, 0, 5]\n        assert subtrai_polinomios(p1, p2) == [-4, 4, 1, 0, 0, 0, -5]\n\n    def test_exemplo_2(self):\n        p1 = [-5, 4, 3]  # 3x2 + 4x - 5\n        p2 = [-4, 2, 3]  # 3x2 + 2x - 4\n        assert subtrai_polinomios(p1, p2) == [-1, 2]  # 2x - 1\n\nif __name__ == '__main__':\n    loader = unittest.TestLoader()\n    runner = unittest.TextTestRunner()\n    runner.run(loader.loadTestsFromModule(sys.modules[__name__]))\n",
+        "mode": "r",
+        "name": "public_tests.py"
+      },
+      {
+        "content": "{\n  \"ignore\": [\n    \"public_tests.py\",\n    \"acceptance_tests.py\"\n  ],\n  \"tests\": [],\n  \"title\": \"Subtração de Polinomios\"\n}",
+        "mode": "r",
+        "name": "tst.json"
+      }
+    ],
+    "iid": 6175663054651392,
+    "index": null,
+    "user": "emanuel.lima@ccc.ufcg.edu.br"
+  },
+  "iid": 6175663054651392,
+  "key": "6175663054651392",
+  "site": "prog1",
+  "user": "emanuel.lima@ccc.ufcg.edu.br"
+}

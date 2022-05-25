@@ -1,0 +1,26 @@
+{
+  "dirname": null,
+  "full_resource": {
+    "dirname": null,
+    "files": [
+      {
+        "category": "public",
+        "content": "- input: |\n    220\n  output: |\n    0 caixa(s) completa(s) para embalar os morangos.\n    100.0% dos morangos serão perdidos.\n\n- input: |\n    440\n  output: |\n    1 caixa(s) completa(s) para embalar os morangos.\n    9.1% dos morangos serão perdidos.\n",
+        "mode": "ro",
+        "name": "public_tests.yaml"
+      },
+      {
+        "content": "{\n  \"tests\": [],\n  \"title\": \"Caixas com Morangos\"\n}",
+        "mode": "r",
+        "name": "tst.json"
+      }
+    ],
+    "iid": 5910649748062208,
+    "index": null,
+    "user": "emanuel.lima@ccc.ufcg.edu.br"
+  },
+  "iid": 5910649748062208,
+  "key": "5910649748062208",
+  "site": "prog1",
+  "user": "emanuel.lima@ccc.ufcg.edu.br"
+}

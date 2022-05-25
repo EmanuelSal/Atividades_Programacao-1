@@ -1,0 +1,5 @@
+-   len -> tamanho da string
+-   slice -> navegar pela string
+        Ex: <string>[0:3] - indice 0 até 3
+    
+-

@@ -1,0 +1,32 @@
+{
+  "dirname": null,
+  "full_resource": {
+    "dirname": null,
+    "files": [
+      {
+        "category": "public",
+        "content": "- type: script\n  script: python public_tests.py {}\n\n",
+        "mode": "ro",
+        "name": "public_tests.yaml"
+      },
+      {
+        "category": "public",
+        "content": "import unittest\nimport sys\n\nmodule = sys.argv[-1].split(\".py\")[0]\n\nclass PublicTests(unittest.TestCase):\n\n    @classmethod\n    def setUpClass(cls):\n        global zera_nao_nulos\n        undertest = __import__(module)\n        zera_nao_nulos = getattr(undertest, 'zera_nao_nulos', None)\n\n    def test_exemplo(self):\n        jogo = [\n            [1, 1, 1, 1, 1, 1],\n            [1, 0, 0, 0, 1, 1],\n            [1, 1, 1, 1, 1, 1],\n            [1, 1, 1, 1, 1, 1],\n            [1, 1, 1, 1, 1, 1],\n            [1, 1, 1, 1, 1, 1],\n        ]    \n        zera_nao_nulos(jogo, 3, 2)\n        assert jogo == [\n            [1, 1, 1, 1, 1, 1],\n            [1, 0, 0, 0, 1, 1],\n            [1, 1, 0, 1, 1, 1],\n            [0, 0, 0, 0, 0, 0],\n            [1, 1, 0, 1, 1, 1],\n            [1, 1, 0, 1, 1, 1],\n        ]\n\nif __name__ == '__main__':\n    loader = unittest.TestLoader()\n    runner = unittest.TextTestRunner()\n    runner.run(loader.loadTestsFromModule(sys.modules[__name__]))\n",
+        "mode": "r",
+        "name": "public_tests.py"
+      },
+      {
+        "content": "{\n  \"tests\": [],\n  \"title\": \"Zera não-nulos\"\n}",
+        "mode": "r",
+        "name": "tst.json"
+      }
+    ],
+    "iid": 5876325040521216,
+    "index": null,
+    "user": "emanuel.lima@ccc.ufcg.edu.br"
+  },
+  "iid": 5876325040521216,
+  "key": "5876325040521216",
+  "site": "prog1",
+  "user": "emanuel.lima@ccc.ufcg.edu.br"
+}

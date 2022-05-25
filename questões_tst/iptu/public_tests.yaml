@@ -1,0 +1,13 @@
+- input: |
+    150.0
+    0.89
+  output: |
+    Área construída? Alíquota? IPTU: R$ 168.50
+
+    Pagamento:
+    1. Quota única. R$ 126.38
+    2. Em 6 parcelas. Total: R$ 160.07
+       6 x R$ 26.68
+    3. Em 10 parcelas. Total: R$ 168.50
+       10 x R$ 16.85
+

@@ -1,0 +1,26 @@
+{
+  "dirname": null,
+  "full_resource": {
+    "dirname": null,
+    "files": [
+      {
+        "category": "public",
+        "content": "- input: |\n    13571981724\n    42\n  output: |\n    soma: 26\n    números lidos: 6 de 11\n    critério de parada: 6 ímpares\n\n- input: |\n    71881724\n    12\n  output: |\n    soma: 16\n    números lidos: 3 de 8\n    critério de parada: limite\n\n- input: |\n    1234215\n    42\n  output: |\n    soma: 18\n    números lidos: 7 de 7\n    critério de parada: final da sequência\n\n\n\n",
+        "mode": "ro",
+        "name": "public_tests.yaml"
+      },
+      {
+        "content": "{\n  \"tests\": [],\n  \"title\": \"Checa Sequência de Dígitos\"\n}",
+        "mode": "r",
+        "name": "tst.json"
+      }
+    ],
+    "iid": 5335373842481152,
+    "index": null,
+    "user": "emanuel.lima@ccc.ufcg.edu.br"
+  },
+  "iid": 5335373842481152,
+  "key": "5335373842481152",
+  "site": "prog1",
+  "user": "emanuel.lima@ccc.ufcg.edu.br"
+}
